@@ -61,7 +61,7 @@ RUN true \
   && mkdir -p /action/bundle \
   && echo "source 'https://rubygems.org'" > $BUNDLE_GEMFILE \
 #  && echo "gem 'arduino_ci', git: '$ARDUINO_CI_GITREPO', $ARDUINO_CI_GITREF" >> $BUNDLE_GEMFILE \
-  && echo "gem 'arduino_ci', '=1.3.0'" >> $BUNDLE_GEMFILE \
+  && echo "gem 'arduino_ci', '=1.4.0'" >> $BUNDLE_GEMFILE \
   && cat $BUNDLE_GEMFILE \
   && bundle install --gemfile /action/Gemfile --path /action/bundle \
   && find /action |grep arduino_ci.rb
